@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- href= hyperlink reference -->
+    <script src="js/script.js"></script>
+    <title>ourGoogle</title>
+    <!-- browser tab name -->
+    <meta name="author" content="The Thing Is">
+    <meta name="description" content="Fake News">
+    <meta charset="UTF-utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <nav>
+    <ul class="leftList">
+      <a href="#"><li>About</li></a>
+      <a href="#"><li>Store</li></a>
+    </ul>
+    <ul class="rightList">
+      <a href="#"><li>Gmail</li></a>
+      <a href="#"><li>Images</li></a>
+      <a href="#"><li>Menu</li></a>
+      <li>Notifications</li>
+      <li>Profile Pic</li>
+    </ul>
+  </nav>
+  <main>
+    <div id="googleLogo"><img src="images/googleicon.gif" alt="Google Animated Logo"></div>
+    <form name= "search-form" method="post" action="/">
+      <!-- variables that will send away from html (not css), use hyphens over camelCase
+          two types of methods: get & post; sending/getting info to server, different to links
+          action - what happens when you submit form; set to / here, because it's reloading-->
+      <input type="text" name="search-value"></input>
+      <!-- text, email, password, etc. -->
+      <input id="hiddenInput" type="submit"></input>
+      <div>
+        <button type="submit">ourGoogle Search</button>
+        <button type="submit">I'm Feelin' Fortunate<button>
+    </div>
+    </form>
+    <p>Google offered in <a href="#">Fran&#231;ais</a></p>
+  </main>
+
+  <footer>
+    <div><ul class= "leftList"><li>Canada</li></ul></div>
+    <div>
+      <ul class="leftList">
+        <a href="#"><li>Advertising</li></a>
+        <a href="#"><li>Business</li></a>
+      </ul>
+      <ul class="rightList">
+        <a href="#"><li>Privacy</li></a>
+        <a href="#"><li>Terms</li></a>
+        <a href="#"><li>Settings</li></a>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

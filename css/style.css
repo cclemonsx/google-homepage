@@ -1,0 +1,10 @@
+/* google homepage styles */
+
+body {
+
+}
+
+#hiddenInput {
+  visibility: hidden;
+  position: absolute;
+}
