@@ -2,8 +2,9 @@
 <html>
 <head>
     <!-- 'links' aren't links, are connections to files; 'a' is a clickable (hyper)link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="images/glogo.png">
+    <link id="favIcon" rel="icon" href="images/glogo.png">
     <!-- href= hyperlink reference -->
     <script src="js/script.js"></script>
     <title>ourGoogle</title>
@@ -11,7 +12,7 @@
     <meta name="author" content="The Thing Is">
     <meta name="description" content="Fake News">
     <meta charset="UTF-utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 </head>
 <body>
   <nav>
@@ -22,30 +23,33 @@
     <ul class="rightList">
       <a href="#"><li>Gmail</li></a>
       <a href="#"><li>Images</li></a>
-      <a href="#"><li><img src="images/gridicon.png" alt="Google Animated Logo"></li></a>
-      <li><img src="images/cutealerticon.png" alt="Google Animated Logo"></li>
-      <li><img src="images/usericon.png" alt="Google Animated Logo"></li>
+      <li id="gridIcon"><img src="images/gridicon.png" alt="grid menu icon google homepage"></li>
+      <li id="alertIcon"><img src="images/bellIcon.png" alt="bell alert icon"></li>
+      <li id="profileIcon"><img src="images/dogIcon.png" alt="cute scruffy dog icon"></li>
     </ul>
   </nav>
-  <main>
-    <div id="googleLogo"><img src="images/googlelogo.png" alt="Google Animated Logo"></div>
-    <form name= "search-form" method="post" action="/">
-      <!-- variables that will send away from html (not css), use hyphens over camelCase
-          two types of methods: get & post; sending/getting info to server, different to links
-          action - what happens when you submit form; set to / here, because it's reloading-->
-      <input type="text" name="search-value"></input>
-      <!-- text, email, password, etc. -->
-      <input id="hiddenInput" type="submit"></input>
-      <div>
-        <button type="submit">ourGoogle Search</button>
-        <button type="submit">I'm Feelin' Fortunate<button>``
-    </div>
-    </form>
-    <p>Google offered in <a href="#">Fran&#231;ais</a></p>
-  </main>
+  <center>
+    <main>
+      <div id="googleLogo"><img src="images/googlelogo.png" alt="Google Animated Logo"></div>
+      <form name= "search-form" method="post" action="/">
+        <!-- variables that will send away from html (not css), use hyphens over camelCase
+            two types of methods: get & post; sending/getting info to server, different to links
+            action - what happens when you submit form; set to / here, because it's reloading-->
+        <input type="text" name="search-value" maxlength="2048" alt="Search"></input>
+
+        <!-- text, email, password, etc. -->
+        <input id="hiddenInput" type="submit"></input>
+        <center>
+          <button type="submit">ourGoogle Search</button>
+          <button type="submit">I'm Feelin' Somethin' Alright</button>
+        </center>
+      </form>
+      <center><p>Google offered in: <a href="#">Fran&#231;ais</a></p></center>
+    </main>
+  </center>
 
   <footer>
-    <div><ul class= "leftList"><li>Canada</li></ul></div>
+    <div class="region"><ul><li>Canada</li></ul></div>
     <div>
       <ul class="leftList">
         <a href="#"><li>Advertising</li></a>

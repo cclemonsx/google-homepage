@@ -1,10 +1,225 @@
 /* google homepage styles */
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
-body {
+a:hover, a li:hover {
+  text-decoration: underline;
+}
 
+a li {
+  font-size: 13px;
+  line-height: 30px;
+}
+
+a, li, p {
+  font-family: arial, sans-serif; /*add a backup font after comma*/
+}
+
+body, nav, footer {
+  overflow-x: hidden;
+  min-width: 510px;
+}
+
+nav, footer {
+  overflow-y: hidden;
+}
+
+body, html {
+  font-size: small;
+
+}
+
+button {
+  background-image: -moz-linear-gradient(top,#f5f5f5,#f1f1f1);
+  -moz-border-radius: 2px;
+  -moz-user-select: none;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  color: #757575!important;
+  cursor: default;
+  height: 36px;
+  line-height: 27px;
+  padding: 0 16px;
+  margin: 11px 2px;
+  min-width: 54px;
+  font-weight: 500!important;
+  text-align: center;
+}
+
+button:hover {
+  background-image: -moz-linear-gradient(top,#f8f8f8,#f1f1f1);
+  -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  background-color: #f8f8f8;
+  background-image: linear-gradient(top,#f8f8f8,#f1f1f1);
+  background-image: -o-linear-gradient(top,#f8f8f8,#f1f1f1);
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  color: #222!important;
+}
+
+center {
+  padding-top: 18px;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(238,238,238, 0.7);
+}
+
+footer div {
+  min-width: 100%;
+  border-top: 0.5px solid rgba(0,0,0,0.1);
+}
+
+footer .rightList, footer .leftList {
+  color: rgba(102,102,102,1.0);
+}
+
+img {
+  width: auto; /*automatically scales with height so you don't break aspect ratio*/
+  display: inline-block;
+  opacity: 0.7;
+
+}
+
+img:hover {
+  opacity: 1.0;
+  -webkit-transition: width 1s; /* Safari */
+  transition: width 1s;
+  cursor: pointer;
+}
+
+input {
+  width: 584px;
+  height: 40px;
+  padding-left: 16px;
+  padding: 5px 9px 0;
+  border-radius: 1px;
+  border: 1px solid #eaeaea;
+  outline: none;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #fff;
+  color: #222;
+  box-shadow: 0 1px 0px 1px rgba(0,0,0,0.1);
+
+}
+
+input:hover {
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  border: 1px solid #c6c6c6;
+  box-shadow: 2px 4px 4px 2px rgba(0,0,0,0.1);
+  color: #222;
+}
+
+
+main {
+  margin-top: 89px;
+  width: 584px; /*height default is 100%*/
+}
+
+
+nav {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  right: 0;
+  width: 100%;
+  max-height: 30px;
+}
+
+nav .rightList, nav .leftList {
+  color: rgba(0,0,0,0.84);
+  line-height: 14px;
+}
+
+p {
+  line-height: 28px;
+  color: #222222;
+}
+
+p a {
+  color: #1a0dab;
+  padding: 0 3px;
+}
+
+ul {
+  list-style: none;
+  padding: 5px 30px;
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+  font-size: 15px;
+  vertical-align: middle;
+  font-family: arial, sans-serif;
+}
+
+.region {
+  color: rgba(0,0,0,0.54);
+  line-height: 30px;
+}
+
+.leftList {
+  float: left;
+
+}
+
+footer .leftList li {
+  padding-right: 25px;
+}
+
+nav .leftList li {
+  padding-right: 18px;
+}
+
+.rightList {
+  float: right;
+}
+
+footer .rightList li {
+  padding-left: 27px;
+}
+
+nav .rightList li {
+  padding-left: 15px;
+}
+
+#alertIcon img{
+  height: 20px;
+}
+
+#googleLogo img {
+  height: 216px;
+  width: 384px;
+  opacity: 1.0!important;
+}
+
+#gridIcon img {
+  height: 18px;
 }
 
 #hiddenInput {
   visibility: hidden;
   position: absolute;
+}
+
+#profileIcon {
+  position: relative;
+  height: 30px;
+  width: 30px;
+}
+
+#profileIcon img {
+  position: absolute;
+  top: -10px;
+  height: 40px;
+  opacity: 1.0!important
 }
